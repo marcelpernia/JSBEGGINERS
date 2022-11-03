@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f5f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100%;
+    max-width: 300px;
+}
