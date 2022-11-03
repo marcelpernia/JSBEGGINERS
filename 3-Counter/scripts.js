@@ -2,16 +2,25 @@ const counter = document.getElementById('counter');
 const btnUp = document.getElementById('btn-up');
 const btnDown = document.getElementById('btn-down');
 
-let initial = 0
+let count = 0;
 
 btnUp.addEventListener('click', () => {
-    initial++
-    counter.innerText = initial
+    count++;
+    counter.innerText = count;
+    setCounterColor();
 })
 
 btnDown.addEventListener('click', () => {
-    if(initial > 0) {
-        initial--
-        counter.innerText = initial
-    }
+    count--;
+    counter.innerText = count;
+    setCounterColor();
 })
+
+const setCounterColor = function() {
+    if (count < 0) {
+        counter.style.color = 'red';
+    }
+    if (count >= 0) {
+        counter.style.color = '#363636';
+    }
+}
