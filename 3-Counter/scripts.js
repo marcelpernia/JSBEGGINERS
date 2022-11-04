@@ -16,7 +16,7 @@ btnDown.addEventListener('click', () => {
     setCounterColor();
 })
 
-const setCounterColor = function() {
+const setCounterColor = () => {
     if (count < 0) {
         counter.style.color = 'red';
     }
