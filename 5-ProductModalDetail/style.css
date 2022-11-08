@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products .card {
+    margin: 1%;
+    width: 31.33333%;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+.products .card .image img {
+    object-fit: cover;
+}
+
+.modal .image img {
+    object-fit: contain
+}
